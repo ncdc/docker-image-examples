@@ -1,8 +1,8 @@
 #!/bin/bash
 
 echo -n "Saving build artifacts..."
-cd /
 # /opt/wildfly is the wildfly user homedir
-tar czf /tmp/artifacts/maven.tar.gz /opt/wildfly/.m2
+cd /opt/wildfly
+tar czf /tmp/artifacts/wildfly.tar.gz .m2 source/target
 echo "...done"
 
